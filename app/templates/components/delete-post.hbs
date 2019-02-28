@@ -1,0 +1,25 @@
+<button class="ui mini circular icon and button" {{action "openModal" ID model }} title="Delete">
+  <i class="remove icon"></i>
+</button>
+
+{{#ui-modal name=ID class=ID }}
+  <div class="ui icon header">
+    <i class="warning sign icon"></i>
+    Please confirm ...
+  </div>
+  <div class="content">
+    <p>Are you sure need to delete this post?</p>
+  </div>
+  <br>
+  <div class="actions">
+    <div class="ui red deny inverted button">
+      <i class="remove icon"></i>
+      No
+    </div>
+    <div class="ui green positive inverted button">
+      <i class="checkmark icon"></i>
+      Yes
+    </div>
+
+  </div>
+{{/ui-modal}}

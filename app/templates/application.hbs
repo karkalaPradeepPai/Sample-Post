@@ -1,0 +1,37 @@
+<div class="ui segment">
+  <div class="image">
+    <img class="ui small centered image" src="/assets/images/uwindsor_logo.png" alt="">
+  </div>
+</div>
+<div class="ui attached stackable inverted menu">
+  {{#link-to "home"}}
+    <a class="item"><i class="home icon"></i> Home</a>
+  {{/link-to}}
+
+  {{#link-to "posts"}}<a class="item">Posts</a>{{/link-to}}
+
+  {{#link-to "contact"}}<a class="item">Contact</a>{{/link-to}}
+  <div class="right menu">
+    {{#link-to "about"}}
+      <a class="ui item">About</a>
+    {{/link-to}}
+  </div>
+</div>
+<div class="ui container">
+  {{outlet}}
+</div>
+
+
+
+
+<div class="ui padded grid" style="background-color: blueviolet">
+  <div class="fourteen wide column">
+    Copyright - S1G4 2019
+  </div>
+  <div class="two wide column">
+    <div class="ui centered">
+      <img class="ui tiny image" src="/assets/images/UWindsor_Logo_Rev.png" alt="">
+    </div>
+  </div>
+</div>
+

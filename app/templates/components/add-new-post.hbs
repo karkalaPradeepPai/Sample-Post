@@ -1,0 +1,32 @@
+<div class="ui blue button" {{action "openModal"}}>
+  Add New Post
+</div>
+
+{{#ui-modal name="newPost" class="newPost" showing=showing}}
+  <div class="header">
+    Adding new post
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="field">
+        <label>Post Title</label>
+        {{input type="text" cols="50" rows="2" value=title placeholder="add title"}}
+      </div>
+      <div class="field">
+        <label>Post Body</label>
+        {{textarea value=body cols="50" rows="3" placeholder="add body"}}
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="actions">
+    <div class="ui black deny button">
+      Cancel
+    </div>
+    <div class="ui positive right labeled icon button">
+      Save
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+{{/ui-modal}}

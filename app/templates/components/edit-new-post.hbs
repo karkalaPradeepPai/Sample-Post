@@ -1,0 +1,27 @@
+<button class="ui mini circular icon green button" {{action "openModal" ID model }} title="Edit">
+  <i class="write icon"></i>
+</button>
+{{#ui-modal name=ID class=ID}}
+  <div class="header">
+    Edit post "{{model.id}}
+  </div>
+  <div class="content">
+    <div class="ui form">
+      <div class="field">
+        <label>Post Title</label>
+        {{input type="text" cols="50" rows="1" value=title placeholder="add Title"}}
+      </div>
+      <div class="field">
+        <label>Post Body</label>
+        {{textarea value=body cols="50" rows="3" placeholder="add body"}}
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="actions">
+    <div class="ui black deny button">Cancel</div>
+    <div class="ui positive right labeled icon button">Save
+      <i class="checkmark icon"></i></div>
+  </div>
+{{/ui-modal}}

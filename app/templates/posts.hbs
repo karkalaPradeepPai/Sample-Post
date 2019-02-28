@@ -1,0 +1,16 @@
+<br>
+<h2>Blog Posts</h2>
+<div class="ui-grid">
+  {{#each this.model as |data|}}
+    <div class="eight wide column">
+      <li>{{data.title}}</li>
+    </div>
+    <div class="four wide column right aligned">
+      {{edit-post model=data ID=(concat 'edit' data.id)}}
+    </div>
+    <div class="four wide column left aligned">
+      {{delete-post model=data ID=(concat 'delete' data.id)}}
+    </div>
+  {{/each}}
+</div>
+{{add-new-post}}
